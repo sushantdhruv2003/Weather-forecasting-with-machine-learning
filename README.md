@@ -68,9 +68,7 @@ Used for optimization via (Random Search) via `scikit-learn` library.
 Best parameters: {'subsample': 0.7, 'n_estimators': 100, 'min_samples_split': 5, 'min_samples_leaf': 6, 'max_features': None, 'max_depth': 4, 'loss': 'huber', 'learning_rate': 0.05}
 Test R²: 0.8604
 train r2: 0.8658
-## Future Improvements
-- Adding more advanced deep learning models.
-- Enhancing dataset quality with more features.
+
 
 
 ## License
@@ -160,9 +158,6 @@ Weather-forecasting-with-machine-learning/
 Test R²: 0.8604
 train r2: 0.8658
 
-## بهبودهای آتی  
-- افزودن مدل‌های عمیق پیشرفته  
-- افزایش کیفیت دیتاست با ویژگی‌های بیشتر  
 
 ## مجوز  
 این پروژه تحت **مجوز MIT** منتشر شده است.  
