@@ -124,3 +124,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ---
 
 Thank you for visiting the Weather Forecasting with Machine Learning repository. We hope you find it useful for your own projects! For more information, feel free to explore the code and documentation.
+
+Added circle CI setup
